@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% for chanson in chansons %}
+        {{ chanson.titre }}
+    {% endfor %}
+{% endblock %}

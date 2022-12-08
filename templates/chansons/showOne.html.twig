@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChansonsController!{% endblock %}
+
+{% block body %}
+    {% for chanson in chansons %}
+        {{ chanson.titre }}
+    {% endfor %}
+{% endblock %}

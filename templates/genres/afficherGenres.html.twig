@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <main>
+    <h1>Liste des genres</h1>
+    {% for genre in genres %}
+        <div class="genres">
+        <h2><a href="{{ path('afficherParGenre', {'id': genre.id}) }}">{{ genre.titre }}</a></h2>
+        <h3>{{ genre.description }}</h3>
+        </div>
+    {% endfor %}
+    </main>
+{% endblock %}

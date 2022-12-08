@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <main>
+        <h1><b>Titre :</b>{{ chansons.titre }}
+        </h1>
+        <h2><b>Artiste : {{ chansons.artiste }}</b></h2>
+        <h3><b>Paroles :</b></h3>
+        <p>{{ chansons.paroles }}</p>
+        <p><b>Sortie le :</b> {{ chansons.dateSortie|date('d/m/Y') }}</p>
+    </main>
+{% endblock %}
